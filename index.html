@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Simplifii Assignment1(Chanchal Yadav)</title>
+	  <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>General Information Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action='' id="profileForm">
+      <fieldset>
+        <label for="Name">Name:
+          <input type="text" name="Name" placeholder="Enter your name" minlength="4" required /></label>
+        <label for="age">Age:
+          <input name="age" type="number" min="18" required /></label>
+        <label for="Contact">Mobile Number<input type="tel" pattern="[0-9]{10}" name="Contact" placeholder="Enter your mobile number" maxlength="10"
+            required /></label>
+        <label>Address:
+          <input type="text" name="Address" placeholder="Enter your address" maxlength="200" required /></label>
+      </fieldset>
+      <fieldset>
+        <label>Provide a bio:
+          <textarea name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+			  </label>
+      </fieldset>
+      <button onclick="saveData()">Submit</button>
+    </form>
+    <button onclick="displayData()">Preview Profile</button>
+    <p id="display"></p>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
